@@ -1,0 +1,13 @@
+h1 {
+    color: blue;
+    font-family: verdana;
+}
+
+p {
+    color: cadetblue;
+    font-size: 2rem;
+}
+
+header {
+    color: brown !important;
+}
