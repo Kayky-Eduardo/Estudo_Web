@@ -4,19 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/estilo.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Atividade 002</title>
   </head>
 
   <body>
     <header class="principal">
-      <h1>Venha construir o seu edifício dos sonhos conosco I-Desing</h1>
-      <p>
-        Nossa empresa I-Design atua na área de projetos arquitetônicos Esses
-        projetos são a base para a construção de qualquer edificação, fornecendo
-        detalhes técnicos, informações e representações gráficas (plantas,
-        cortes, fachadas, etc.) que permitem a compreensão e a execução da ideia
-        projetual.
-      </p>
     </header>
     <nav class="menu">
       <ul>
@@ -26,3 +20,28 @@
         <li><a href="cliente.html">Clientes</a></li>
         <li><a href="contato.html">Contatos</a></li>
       </ul>
+    </nav>
+    <section class="contato">
+      <div class="contato-container">
+        <h2>Entre em Contato!</h2>
+
+        <form class="form-contato" method="POST">
+          <input type="text" name="nome" required />
+          <input type="email" name="email" required />
+          <input type="tel" name="telefone"/>
+          <textarea name="mensagem" ></textarea>
+          <button type="submit">Enviar mensagem</button>
+        </form>
+
+        <div class="info-contato">
+          <p><strong>Telefone:</strong> (32) 7698-5148</p>
+          <p><strong>E-mail:</strong> idesign@i-design.com</p>
+          <p><strong>Endereço:</strong> Rua Leonardo Da Vinci, 12 – Centro, Cidade/UF</p>
+        </div>
+    </section>
+    <a class="link" href="index.html">Home page!</a>
+    <footer>
+      <p>&copy; Direitos autorais reservados para o Mr. Renan, Mr. Sérgio e Kayky Eduardo.</p>
+    </footer>
+  </body>
+</html>
