@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3: Bordas, Opacidade e Gradiente</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .caixa {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            border-radius: 10px;
+            
+            /* Propriedades da animação*/
+            animation: moverEColorir 4s ease-in-out infinite alternate;
+            /* Nome da animação moverEColorir*/
+            /*Duração: 4s*/
+            /*timing function: ease-in-out(suaviza início e fim)*/
+            /*Iterações: infinite (repete infinitamente)*/
+            /*Direção: alternate(vai e volta)*/
+        }
+
+        /*Definição dos keyframes (quadros-chave) da animação*/
+        @keyframes moverEColorir {
+            /*Estado inicial (0% do tempo da animação)*/
+            0% {
+                transform: translateY(0);
+                background-color: #3498db;
+            }
+
+            /*Estado intermediário (50% do tempo da animação)*/
+            50% {
+                transform: translateY(-100px); /*Move 100px para cima*/
+                background-color: #e74c3c;
+            }
+
+            /*Estado final(100%)*/
+            100% {
+                transform: translateY(0);
+                background-color: #2ecc71;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa"></div>
+</body>
+</html>
