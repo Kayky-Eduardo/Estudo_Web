@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    font-family: "roboto";
+    font-weight: bold;
+}
+
+/*
+Estilos de corpo da página
+usa flexbox com direção em coluna
+garante que o body ocupe pelo menos toda a altura da viewport
+*/
+body {
+    display: flex;
+    min-height: 100vh; /*100% da altura da viewport */
+    flex-direction: column; /*Organiza os filhos verticalmente*/
+    /* Remove margens padrão */
+}
+
+/* 
+Container principal (main)
+também usa flexbox para organizar seus filhos
+flex: 1faz com que ocupe todo o espaço disponível entre header footer
+ */
+main {
+    /* Ativa flexbox para os filhos diretos */
+    display: flex;
+    /* Cresce para ocupar todo o espaço vertical disponível */
+    flex: 1;
+}
+
+/* 
+Estilos para o artigo principal
+flex: 1 faz com que ocupe todo o espaço restante
+order: 1 define que será o primeiro item na ordem visual
+ */
+main > article {
+    flex: 1;
+    order: 1;
+}
+
+/* 
+Estilos compartilhados para nav e aside
+flex: 0 0 20vw - não cresce, não encolhe, largura fixa de 20vw */
+main > nav,
+main > aside {
+    /* Largura fixa de 20% da viewport */
+    flex: 0 0 20vw; 
+}
+
+/* 
+Estilos de padding para todos os elementos estruturais
+aplica 1em de padding em todos os lados
+ */
+header,
+footer,
+article,
+nav,
+aside {
+    /* Espaçamente interno de 1 unidade relativa ao tamanho da fonte*/
+    padding: 1em;
+}
+
+/*
+ * Explicação das unidades de medida utilizadas:
+ *
+ * "vh" (viewport height): Unidade relativa à altura da viewport.
+ *     Ex: 20vh = 20% da altura da área visível do navegador
+ *
+ * "vw" (viewport width): Unidade relativa à largura da viewport.
+ *     Ex: 20vw = 20% da largura da área visível do navegador
+ *
+ * "em": Unidade relativa ao tamanho da fonte do elemento pai.
+ *     Ex: Se o elemento pai tem font-size de 16px, 1em = 16px
+ */
