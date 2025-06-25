@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Slab", sans-serif;
+    line-height: 1.6;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    color: #213d07;
+}
+
+.principal-home {
+    /*URL da imagem de fundo*/
+    background-image: url('../img/desenho.png');
+    /*Faz a imagem cobrir todo o container*/
+    background-size: cover;
+    /*Centraliza a imagem*/
+    background-position: center;
+    width: 100%;
+    height: 480px;
+    display: flex;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}   
+
+.titulo-principal-home {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    color: #444444;
+    font-size: 2.5rem;
+    padding: 60px 20px; 
+    margin-bottom: 10px;
+    max-width: 600px
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #518d4d;
+    margin-bottom: 30px;
+}
+
+.menu a {
+    font-family: "Roboto Slab", sans-serif;
+    padding-right: 20px;
+    color: white;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #213d07bd;
+    text-decoration: none;
+    transition: .20s;
+}
+
+.caixa-home {
+    display: flex;
+    gap: 50px;
+    width: 60%;
+    color: black;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.caixa-home img {
+    width: 50%;
+    border-radius: 15px;
+}
+
+
+.conteudo-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.ideais {
+    background-color: #346b6448;
+    margin-top: 30px;
+    padding-top: 15px;
+}
+
+.valores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #346b6448;
+    gap: 20px; 
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.valores article {
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+}
+
+.valores article ul {
+    list-style-type: none;
+}
+
+.equipe {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.equipe article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.equipe img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.equipe p {
+    font-size: 1.2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #518d4d;
+    width: 100%;
+
+}
+
+footer ul {
+    list-style-type: none;
+    width: 50%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+footer a:hover {
+    font-size: 1.4rem;
+    transition: font-size 0.5s ease;
+}
+
+footer img {
+    width: 20%;
+    display: block;
+
+}
+
+.container-footer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-footer p {
+    color: white;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 1rem;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+    background-color: #346b6448;
+}
+
+.formulario > article {
+    padding: 170px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.formulario > article > h3 {
+    font-size: 1.9em;
+}
+
+.formulario > form {
+    padding: 100px;
+    border-radius: 20px;
+}
+
+.formulario h1 {
+    font-size: 1.8rem;
+}
+
+.formulario > article > div {
+    margin-top: 10px;
+}
+
+
+input[type='text'],
+input[type='email'],
+textarea{
+    width: 85%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button{
+    margin-top: 15px;
+    padding:  10px 20px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #45a049;
+}
