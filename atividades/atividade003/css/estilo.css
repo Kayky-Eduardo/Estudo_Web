@@ -82,8 +82,10 @@ h1 {
 }
 
 .caixa-home img {
-    width: 50%;
+    width: 100%;
     border-radius: 15px;
+    max-width: 500px;
+    max-height: 500px;
 }
 
 
@@ -146,6 +148,40 @@ h1 {
     font-size: 1.2rem;
 }
 
+.servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.servicos > article {
+    display: flex;
+    gap: 50px;
+    width: 60%;
+    color: black;
+    padding: 20px;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    border-color: 20px;
+}
+
+.article-alterado {
+    background-color: #346b6448;
+}
+
+.servicos img {
+    width: 50%;
+    border-radius: 10px;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+
+
 footer {
     display: flex;
     justify-content: center;
@@ -175,6 +211,7 @@ footer a:hover {
 footer img {
     width: 20%;
     display: block;
+    min-width: 200px;
 
 }
 
@@ -191,6 +228,11 @@ footer img {
     font-size: 1rem;
 }
 
+.formulario hr {
+    height: 100vh;
+    width: 0.5%;
+    background-color: white;
+}
 .formulario {
     display: flex;
     justify-content: center;
@@ -250,4 +292,51 @@ button{
 
 button:hover{
     background-color: #45a049;
+}
+
+h2 {
+    text-align: center;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.caixa h1 {
+    margin-top: 10px;
+}
+.caixa img {
+    width: 90%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 30px 0px 30px 0px;
+}
+
+.titulo-servicos {
+    margin: 0px 0px 50px 0px;
+}
+
+.container-petshop {
+    display: flex;
+}
+
+hr {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-color: black;
+    margin-bottom: 100px;
 }
