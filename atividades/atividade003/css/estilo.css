@@ -151,22 +151,21 @@ h1 {
 .servicos {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 20px;
-    border-radius: 10px;
     align-items: center;
+    gap: 30px;
 }
 
 .servicos > article {
     display: flex;
-    gap: 50px;
-    width: 60%;
+    flex-direction: row;
+    gap: 40px;
+    width: 70%;
     color: black;
     padding: 20px;
-    margin: auto;
-    border-radius: 5px;
-    text-align: center;
-    border-color: 20px;
+    border-radius: 10px;
+    text-align: left;
+    border: 1px solid transparent;
 }
 
 .article-alterado {
@@ -176,12 +175,64 @@ h1 {
 .servicos img {
     width: 50%;
     border-radius: 10px;
-    min-height: 100px;
     max-height: 300px;
+    object-fit: cover;
 }
 
+.conteiner-servico {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.conteiner-servico h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
 
+@media (max-width: 768px) {
+    .servicos article {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .conteudo-home article {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .caixa {
+        width: 90%;
+    }
+    .conteudo-home img {
+        width: 100%;
+        max-height: 250px;
+    }
+    .servicos article {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .servicos img {
+        width: 100%;
+        max-height: 250px;
+    }
+
+    .formulario {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divisor-vertical {
+        display: none;
+    }
+
+    .formulario > article,
+    .form-contato {
+        max-width: 90%;
+    }
+}
 footer {
     display: flex;
     justify-content: center;
@@ -228,31 +279,27 @@ footer img {
     font-size: 1rem;
 }
 
-.formulario hr {
-    height: 100vh;
-    width: 0.5%;
-    background-color: white;
-}
 .formulario {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-top: 50px;
-    background-color: #346b6448;
+    padding: 40px;
+    flex-wrap: wrap;
 }
 
+.form-contato,
 .formulario > article {
-    padding: 170px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.formulario > article > h3 {
-    font-size: 1.9em;
+.vertical {
+    width: 2px;
+    background-color: white;
+    margin: 0 20px;
 }
 
 .formulario > form {
@@ -271,14 +318,14 @@ footer img {
 
 input[type='text'],
 input[type='email'],
-textarea{
-    width: 85%;
+input[type='tel'],
+textarea {
+    width: 100%;
     padding: 10px;
     margin-top: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
 button{
     margin-top: 15px;
     padding:  10px 20px;
@@ -299,26 +346,21 @@ h2 {
 }
 
 .caixa {
-    display: flex;
-    flex-direction: column;
-    width: 33%;
-    align-items: center;
-    background-color: white;
-    color: black;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 .caixa h1 {
     margin-top: 10px;
 }
 .caixa img {
-    width: 90%;
-    height: 50%;
-    border-radius: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 h2 {
@@ -331,12 +373,20 @@ h2 {
 
 .container-petshop {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
+
 
 hr {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     border-color: black;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+}
+
+.nossos-contatos {
+    text-align: left;
 }
