@@ -233,7 +233,9 @@ h1 {
         max-width: 90%;
     }
 }
+
 footer {
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,6 +298,9 @@ footer img {
     border-radius: 10px;
 }
 
+.form-contato h2 {
+    text-align: center;
+}
 .vertical {
     width: 2px;
     background-color: white;
