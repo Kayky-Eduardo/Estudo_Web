@@ -43,7 +43,7 @@
                     <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownSegurosVoce">Seguros para você</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownSegurosVoce">
                         <li><a href="seguro_pessoa.html#automoveis" class="dropdown-item">Automóveis</a></li>
-                        <li><a href="seguro_pessoa.html" class="dropdown-item">Residencial</a></li>
+                        <li><a href="seguro_pessoa.html#residencial" class="dropdown-item">Residencial</a></li>
                         <li><a href="seguro_pessoa.html#vida" class="dropdown-item">Vida</a></li>
                     </ul>
                 </li>
@@ -87,7 +87,7 @@
     <main class="container">
         <div class="card-inicial d-flex flex-row mt-5 mb-5">
             <div class="col-md-6 col-xl-6">
-                <h4 class="fw-bold">Sobre a nossa empresa</h1>
+                <h4 class="fw-bold mb-4">Sobre a nossa empresa</h4>
                 <p>
                     Somos uma empresa comprometida em oferecer soluções eficazes, com foco na qualidade, transparência e no atendimento personalizado.
                     Atuamos com responsabilidade, inovação e dedicação para garantir os melhores resultados aos nossos clientes.
@@ -95,7 +95,7 @@
                 </p>
                 <a href="sobre.html" class="btn btn-primary mt-5">Ver mais sobre!</a>
             </div>
-            <img class="h-500 col-md-6 col-xl-6 w-100% " style="width: 50%; object-fit: cover;" src="img/urbano-trafego-cityscape.jpg" alt="Imagem de capa do card">
+            <img class="ms-4 img-fluid col-md-6 col-xl-6 object-fit-cover" src="img/urbano-trafego-cityscape.jpg" alt="Imagem de capa do card">
         </div>
         </section>
         <section>
@@ -106,64 +106,109 @@
                         <img src="img/casal-de-tiro-medio-passando-tempo-na-natureza.jpg" class="grid-img-topo" alt="casal-natureza">
                         <h4>Seguros para você</h4>
                         <p>Este é o motivo pelo qual tomamos várias ações para minimizar suas consequências.</p>
-                        <button class="btn btn-primary mb-5">Leia mais</button>
+                        <button class="btn btn-primary mb-5">Quero proteger minha família</button>
                     </article>
                     <article class="col-md-6 col-xl-6">
                         <img src="img/centro-de-negocios-moderno.jpg" class="grid-img-topo" alt="negocios">
                         <h4>Seguros para sua empresa</h4>
                         <p>A Atlas Corretora de Seguros oferece as melhores soluções em seguros para sua empresa.</p>
-                        <button class="btn btn-primary mb-5">Leia mais</button>
+                        <button class="btn btn-primary mb-5">Explorar soluções para minha empresa</button>
                     </article>
                 </div>
             </div>
         </section>
+        <section class="comentarios py-5 mb-5">
+            <div class="container">
+                <h3 class="fw-bold text-center mb-4">O que dizem nossos clientes</h3>
+                <div id="depoimentosCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-md-8">
+                        <p class="fs-5 fst-italic">"A Atlas nos ajudou a proteger nossa empresa com um plano feito sob medida. Atendimento rápido e humano!"</p>
+                        <h5 class="fw-bold mt-3">Renata Gomes – Empresária</h5>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-md-8">
+                        <p class="fs-5 fst-italic">"Fiquei surpresa com a agilidade na contratação do seguro residencial. Recomendo de olhos fechados."</p>
+                        <h5 class="fw-bold mt-3">Carlos Ribeiro – Cliente Residencial</h5>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-md-8">
+                        <p class="fs-5 fst-italic">"Foi a primeira corretora que realmente entendeu minha necessidade e explicou com clareza cada detalhe."</p>
+                        <h5 class="fw-bold mt-3">Juliana Mendes – Profissional Autônoma</h5>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#depoimentosCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#depoimentosCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+                </div>
+            </div>
+        </section>
     </main>
-<footer class="bg-dark text-light py-5">
-  <div class="container">
-    <div class="d-grid gap-4 gap-md-5 d-md-grid">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="d-grid gap-4 gap-md-5 d-md-grid">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
 
-        <!-- Logo e descrição -->
-        <div class="col">
-          <h5>Sobre nós</h5>
-          <p class="small mb-0">Corretora de seguros com consultoria especializada e presença nacional.</p>
-        </div>
+                <!-- Logo e descrição -->
+                <article>
+                    <h5>Sobre nós</h5>
+                    <p>Corretora de seguros com consultoria especializada e presença nacional.</p>
+                </article>
 
-        <!-- Navegação -->
-        <div class="col">
-          <h5>Links úteis</h5>
-          <ul class="list-unstyled">
-            <li><a href="index.html" class="text-light text-decoration-none d-block mb-2">Home</a></li>
-            <li><a href="sobre.html" class="text-light text-decoration-none d-block mb-2">Sobre a empresa</a></li>
-            <li><a href="seguro_pessoa.html" class="text-light text-decoration-none d-block mb-2">Seguros para você</a></li>
-            <li><a href="seguro_empresa.html" class="text-light text-decoration-none d-block mb-2">Seguros para empresa</a></li>
-            <li><a href="fale_conosco.html" class="text-light text-decoration-none d-block">Fale conosco</a></li>
-          </ul>
-        </div>
+                <!-- Navegação -->
+                <div class="col">
+                <h5>Links úteis</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-light text-decoration-none d-block mb-2">Home</a></li>
+                    <li><a href="sobre.html" class="text-light text-decoration-none d-block mb-2">Sobre a empresa</a></li>
+                    <li><a href="seguro_pessoa.html" class="text-light text-decoration-none d-block mb-2">Seguros para você</a></li>
+                    <li><a href="seguro_empresa.html" class="text-light text-decoration-none d-block mb-2">Seguros para empresa</a></li>
+                    <li><a href="fale_conosco.html" class="text-light text-decoration-none d-block">Fale conosco</a></li>
+                </ul>
+                </div>
 
-        <!-- Contato -->
-        <div class="col">
-          <h5>Contato</h5>
-          <p class="mb-1">📞 (48) 3024‑2229</p>
-          <p class="mb-1">✉️ contato@rochacorretora.com.br</p>
-          <p class="mb-0">📍 Av. Pref. Osmar Cunha, 416 – Sala 702<br>Florianópolis – SC</p>
-        </div>
+                <!-- Contato -->
+                <div class="col">
+                <h5>Contato</h5>
+                <p class="mb-1">📞 (48) 3024‑2229</p>
+                <p class="mb-1">✉️ contato@rochacorretora.com.br</p>
+                <p class="mb-0">📍 Av. Pref. Osmar Cunha, 416 – Sala 702<br>Florianópolis – SC</p>
+                </div>
 
-        <!-- Redes sociais -->
-        <div class="col">
-          <h5>Siga-nos</h5>
-            <a href="#" class="text-light">facebook</a>
-            <br>
-            <a href="#" class="text-light">instagram</a>
+                <!-- Redes sociais -->
+                <div class="col">
+                <h5>Siga-nos</h5>
+                    <a href="#" class="text-light">facebook</a>
+                    <br>
+                    <a href="#" class="text-light">instagram</a>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="text-center text-muted small mt-4">
+            © 2025 Rocha Corretora de Seguros. Todos os direitos reservados.
+            </div>
         </div>
-        </div>
-      </div>
-    </div>
-    <div class="text-center text-muted small mt-4">
-      © 2025 Rocha Corretora de Seguros. Todos os direitos reservados.
-    </div>
-  </div>
-</footer>
+    </footer>
 </div>
     <!--Javascript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
