@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav class="menu navbar navbar-expand-sm navbar-dar p-2">
+    <nav class="menu navbar navbar-expand-sm navbar-dark bg-dark p-2 sticky-top">
         <a href="#" class="navbar-brand">Atlas Corretora</a>
         <button type="button" class="navbar-toggler"
             data-bs-toggle="collapse"
@@ -28,24 +28,23 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="menu-target">
-            <ul class="navbar-nav ms-auto ">
+            <ul class="navbar-nav">
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre a nossa empresa</a></li>
-                <li class="nav-item"><a href="seguro_pessoa.html" class="nav-link"></a></li>
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownSegurosVoce">Seguros para a Empresa</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownSegurosVoce">
-                        <li><a href="seguro_empresa.html#empresarial" class="dropdow-item">Seguro Empresarial</a></li>
-                        <li><a href="seguro_empresa.html#patrimonial" class="dropdow-item">Seguro Patrimonial</a></li>
-                        <li><a href="seguro_empresa.html#vida_empresarial" class="dropdow-item">Seguro de Vida Empresarial</a></li>
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownSegurosEmpresa">Seguros para a Empresa</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownSegurosEmpresa">
+                        <li><a href="seguro_empresa.html#empresarial" class="dropdown-item">Seguro Empresarial</a></li>
+                        <li><a href="seguro_empresa.html#patrimonial" class="dropdown-item">Seguro Patrimonial</a></li>
+                        <li><a href="seguro_empresa.html#vida_empresarial" class="dropdown-item">Seguro de Vida Empresarial</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownSegurosVoce">Seguros para você</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownSegurosVoce">
-                        <li><a href="seguro_pessoa.html#automoveis" class="dropdow-item">Automóveis</a></li>
-                        <li><a href="seguro_pessoa.html" class="dropdow-item">Residencial</a></li>
-                        <li><a href="seguro_pessoa.html#vida" class="dropdow-item">Vida</a></li>
+                        <li><a href="seguro_pessoa.html#automoveis" class="dropdown-item">Automóveis</a></li>
+                        <li><a href="seguro_pessoa.html" class="dropdown-item">Residencial</a></li>
+                        <li><a href="seguro_pessoa.html#vida" class="dropdown-item">Vida</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -54,25 +53,118 @@
             </ul>
         </div>
     </nav>
-    <header>
+    <header class="mb-5">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
 
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="img/tiro-medio-rindo-de-pessoas-no-parque-tematico.jpg" class="d-block w-100 img-fluid h-auto" alt="slide 1">
+                </div>
+                <div class="carousel-item">
+                <img src="img/centro-de-negocios-moderno.jpg" class="d-block w-100 img-fluid h-auto" alt="slide 2">
+                </div>
+                <div class="carousel-item">
+                <img src="img/homem-sem-rosto-dirigindo-carro.jpg" class="d-block w-100 img-fluid h-auto" alt="slide 3">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
     </header>
 
     <main class="container">
-        <section class="d-flex flex-direction-column">
-            <article>
-                <h1>Sobre a nossa empresa</h1>
-                <p>texto sobre a empresa</p>
-            </article>
-            <img src="" alt="texto">
+        <div class="card-inicial d-flex flex-row mt-5 mb-5">
+            <div class="col-md-6 col-xl-6">
+                <h4 class="fw-bold">Sobre a nossa empresa</h1>
+                <p>
+                    Somos uma empresa comprometida em oferecer soluções eficazes, com foco na qualidade, transparência e no atendimento personalizado.
+                    Atuamos com responsabilidade, inovação e dedicação para garantir os melhores resultados aos nossos clientes.
+                    Nosso propósito é crescer com ética, entregando valor real em cada projeto ou serviço que realizamos.
+                </p>
+                <a href="sobre.html" class="btn btn-primary mt-5">Ver mais sobre!</a>
+            </div>
+            <img class="h-500 col-md-6 col-xl-6 w-100% " style="width: 50%; object-fit: cover;" src="img/urbano-trafego-cityscape.jpg" alt="Imagem de capa do card">
+        </div>
+        </section>
+        <section>
+            <h3 class="fw-bold text-center mt-5 mb-5">Nosso serviços</h3>
+            <div class="mostrar-container mt-5">
+                <div class="row">
+                    <article class="col-md-6 col-xl-6">
+                        <img src="img/casal-de-tiro-medio-passando-tempo-na-natureza.jpg" class="grid-img-topo" alt="casal-natureza">
+                        <h4>Seguros para você</h4>
+                        <p>Este é o motivo pelo qual tomamos várias ações para minimizar suas consequências.</p>
+                        <button class="btn btn-primary mb-5">Leia mais</button>
+                    </article>
+                    <article class="col-md-6 col-xl-6">
+                        <img src="img/centro-de-negocios-moderno.jpg" class="grid-img-topo" alt="negocios">
+                        <h4>Seguros para sua empresa</h4>
+                        <p>A Atlas Corretora de Seguros oferece as melhores soluções em seguros para sua empresa.</p>
+                        <button class="btn btn-primary mb-5">Leia mais</button>
+                    </article>
+                </div>
+            </div>
         </section>
     </main>
+<footer class="bg-dark text-light py-5">
+  <div class="container">
+    <div class="d-grid gap-4 gap-md-5 d-md-grid">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
 
-    <!--Rodapé da página-->
-    <footer>
-        
-    </footer>
+        <!-- Logo e descrição -->
+        <div class="col">
+          <h5>Sobre nós</h5>
+          <p class="small mb-0">Corretora de seguros com consultoria especializada e presença nacional.</p>
+        </div>
 
+        <!-- Navegação -->
+        <div class="col">
+          <h5>Links úteis</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-light text-decoration-none d-block mb-2">Home</a></li>
+            <li><a href="sobre.html" class="text-light text-decoration-none d-block mb-2">Sobre a empresa</a></li>
+            <li><a href="seguro_pessoa.html" class="text-light text-decoration-none d-block mb-2">Seguros para você</a></li>
+            <li><a href="seguro_empresa.html" class="text-light text-decoration-none d-block mb-2">Seguros para empresa</a></li>
+            <li><a href="fale_conosco.html" class="text-light text-decoration-none d-block">Fale conosco</a></li>
+          </ul>
+        </div>
+
+        <!-- Contato -->
+        <div class="col">
+          <h5>Contato</h5>
+          <p class="mb-1">📞 (48) 3024‑2229</p>
+          <p class="mb-1">✉️ contato@rochacorretora.com.br</p>
+          <p class="mb-0">📍 Av. Pref. Osmar Cunha, 416 – Sala 702<br>Florianópolis – SC</p>
+        </div>
+
+        <!-- Redes sociais -->
+        <div class="col">
+          <h5>Siga-nos</h5>
+            <a href="#" class="text-light">facebook</a>
+            <br>
+            <a href="#" class="text-light">instagram</a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-muted small mt-4">
+      © 2025 Rocha Corretora de Seguros. Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
+</div>
     <!--Javascript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
