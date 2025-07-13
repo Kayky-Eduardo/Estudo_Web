@@ -53,8 +53,89 @@
             </ul>
         </div>
     </nav>
-    <main>
-
+    <main class="container">
+        <section>
+            <div class="row">
+                <div class="col-md-6 col-xl-6">
+                    <form action="">
+                        <section class="p-2">
+                            <div>
+                                <fieldset>
+                                    <h3 class="mb-4">Mande uma mensagem</h3>
+                                    <article class="mb-3">
+                                        <label for="nome" class="form-label">Nome</label>
+                                        <input type="text" placeholder="Digite seu nome" id="nome" class="form-control">
+                                    </article>
+                                    <article class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" placeholder="Digite seu email" id="email" class="form-control">
+                                    </article>
+                                    <article class="mb-3">
+                                        <label for="end" class="form-label">Endereço</label>
+                                        <input type="text" placeholder="Digite seu Endereço" id="end" class="form-control">
+                                    </article>
+                                </fieldset>
+                            </div>
+                        </section>
+                        <section class="p-2">
+                            <div class="row">
+                                <div class="col-md-5 mb-3">
+                                    <label for="paises">Pais</label>
+                                    <select name="" id="paises" class="form-control">
+                                        <option value="">Brasil</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="estados" class="mb-0">Estado</label>
+                                    <select name="" id="estados" class="form-control">
+                                        <option value="">Minas Gerais</option>
+                                        <option value="">Rio de Janeiro</option>
+                                        <option value="">São Paulo</option>
+                                        <option value="">Outros</option>
+                                    </select>    
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="CEP">CEP</label>
+                                    <input type="text" class="form-control" id="CEP" placeholder="CEP" required="">
+                                </div>
+                            </div>
+                            
+                            <article class="mb-3">
+                                <label class="form-label">Mensagem</label>
+                                <textarea rows="3" id="mensagem" class="form-control"></textarea>
+                            </article>
+                        </section>
+                        <button class="btn btn-primary mb-5" type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6 col-xl-6 mb-5">
+                    <h3 class="mb-5 mt-1">Nossos contatos</h3>
+                    <div class="mb-4">
+                        <h5>📍Escritório</h5>
+                        <p>Faça uma visita para discutirmos sobre a sua segurança</p>
+                        <hr class="w-50 mb-2">
+                        <address>Av. Pref. Osmar Cunha, 416 – Sala 702 Florianópolis – SC<address>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-12 col-sm-3">
+                            <div class="mb-4">
+                                <h5>📞Telefone</h5>
+                                <p>(48) 3024-2229</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="mb-4">
+                                <h5>✉️Email</h5>
+                                <p>contato@rochacorretora.com.br</p>
+                            </div>
+                        </div>
+                        <hr class="w-50 mb-4">
+                    </div>
+                    <h5>Rocha corretora</h5>
+                    <p>A corretora que olha para o seu futuro<br> e preza pelo seu bem estar!</p>
+                </div>
+            </div>
+        </section>
     </main>
         <footer class="bg-dark text-light py-5">
         <div class="container">
