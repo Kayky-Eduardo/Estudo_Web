@@ -10,12 +10,12 @@ if (possibilidade == "sim" || possibilidade == "s") {
     let nome_completo = primeiro_nome.concat(" ", segundo_nome, " ", terceiro_nome, " ", quarto_nome).toLowerCase();
     
     let tamanho = nome_completo.length;
-    console.log(`Nome em maiúsculo: ${nome_completo.toUpperCase()}`)
-    console.log(`Nome em minúsculo: ${nome_completo.toLowerCase()}`)
+    console.log(`Nome em maiúsculo: ${nome_completo.toUpperCase()}`);
+    console.log(`Nome em minúsculo: ${nome_completo.toLowerCase()}`);
     console.log(`O nome ${nome_completo} tem ${tamanho} caracteres`);
 
-    let nome_invertido = nome_completo.split("").reverse().join("")    
-    console.log(`${nome_completo} de ao contrário é ${nome_invertido}`)
+    let nome_invertido = nome_completo.split("").reverse().join("");  
+    console.log(`${nome_completo} de ao contrário é ${nome_invertido}`);
 
     let trocar = prompt("Deseja alterar algum nome?(s/n): ").toLowerCase();
     if (trocar == "s" || trocar == "sim") {
@@ -32,12 +32,12 @@ if (possibilidade == "sim" || possibilidade == "s") {
     let nome_completo = primeiro_nome.concat(" ", segundo_nome, " ", terceiro_nome);
 
     let tamanho = nome_completo.length;
-    console.log(`Nome em maiúsculo: ${nome_completo.toUpperCase()}`)
-    console.log(`Nome em minúsculo: ${nome_completo.toLowerCase()}`)
+    console.log(`Nome em maiúsculo: ${nome_completo.toUpperCase()}`);
+    console.log(`Nome em minúsculo: ${nome_completo.toLowerCase()}`);
     console.log(`O nome ${nome_completo} tem ${tamanho} caracteres`);
 
-    let nome_invertido = nome_completo.split("").reverse().join("")  ;  
+    let nome_invertido = nome_completo.split("").reverse().join("");  
     console.log(`${nome_completo} de ao contrário é ${nome_invertido}`);
 } else {
-    console.log("Digite uma resposta válida!")
+    console.log("Digite uma resposta válida!");
 }
