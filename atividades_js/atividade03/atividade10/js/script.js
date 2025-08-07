@@ -1,11 +1,13 @@
-const analisarNota = (nota) => {
-    if (nota >= 7) {
-        console.log("aprovado");
-    } else if (5 >= nota >= 6.9) {
-        console.log("Recuperação");
-    } else {
-        console.log("Reprovado");
-    }
+function notificacao(nome) {
+    console.log(`o pedido ${nome} está pronto!`);
 }
 
-analisarNota(5);
+function processarPedido(produto, callback) {
+    console.log("Processando o seu pedido.");
+    setTimeout(() =>{ 
+        console.log("Dados processados"),
+        notificacao(`${produto}`)}, 5000);
+}
+
+processarPedido("pneu")
+
