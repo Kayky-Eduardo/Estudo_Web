@@ -1,10 +1,7 @@
-function calcularMedia (lista) {
-    let soma = 0;
-    for(let i = 0; i < lista.length; i++) {
-        soma += lista[i];
-    }
-    media = soma / lista.length;
-    console.log(`A média dos números dados é ${media}`)
+function calcularMedia(n1, n2, n3) {
+    let media = n1 + n2 + n3 / 3; 
+    return media
 }
-let lista = [7, 8, 10];
-calcularMedia(lista);
+
+let media = calcularMedia(7, 8, 10)
+console.log(`O valor da média ${media.toFixed(2)}`);
