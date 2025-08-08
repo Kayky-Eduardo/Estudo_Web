@@ -5,4 +5,4 @@ function mensagemBoasVindas () {
     return console.log(`${nome} ${mensagem}`);
 } 
 
-mensagemBoasVindas()
+mensagemBoasVindas();

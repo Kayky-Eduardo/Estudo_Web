@@ -1,13 +1,13 @@
 function somar1(n1, n2) {
-    return n1 + n2
+    return n1 + n2;
 }
 
 function saudacao1(nome) {
-    return `Bom dia ${nome}`
+    return `Bom dia ${nome}`;
 }
 
-function dobro1(valor) {
-    return valor * 2
+function dobro1(valor) {;
+    return valor * 2;
 }
 
 console.log(somar1(1, 2));

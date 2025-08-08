@@ -9,5 +9,5 @@ function processarPedido(produto, callback) {
         callback(`${produto}`)}, 5000);
 }
 
-processarPedido("pneu", notificacao)
+processarPedido("pneu", notificacao);
 

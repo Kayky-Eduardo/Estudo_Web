@@ -1,5 +1,5 @@
 function calcularIMC(peso, altura) {
-    let imc = peso / altura * altura
+    let imc = peso / altura * altura;
     return console.log(`O IMC desta pessoa é: ${imc.toFixed(2)}`);
 }
 
