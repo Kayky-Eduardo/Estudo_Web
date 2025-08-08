@@ -5,8 +5,8 @@ function formatarData(dia, mes, ano) {
     return data
 } 
 
-let data_formatada = formatarData(8, 8, 2025)
+let data_formatada = formatarData(8, 8, 2025);
 console.log(data_formatada);
 
-let data_formatada2 = formatarData(15, 11, 2025)
+let data_formatada2 = formatarData(15, 11, 2025);
 console.log(data_formatada2);
