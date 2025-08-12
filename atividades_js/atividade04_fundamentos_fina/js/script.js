@@ -53,8 +53,8 @@ function exibirTarefas() {
 
         let tempo_restante = nova_data.getTime() - agora.getTime();
 
-        let dia_restante = Math.floor( tempo_restante / (1000 * 24 * 60 * 60));
-        let horas_restantes = Math.floor(tempo_restante % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
+        let dia_restante = Math.floor(tempo_restante / (1000 * 24 * 60 * 60));
+        let horas_restantes = Math.floor(tempo_restante % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
         let minutos_restantes = Math.floor((tempo_restante % (1000 * 60 * 60)) / (1000 * 60));
         let segundos_restantes = Math.floor((tempo_restante % (1000 * 60)) / 1000);
         
@@ -65,7 +65,7 @@ function exibirTarefas() {
             console.log(`Descricao da Tarefa: ${tarefa.descricao_tarefa}`);
             console.log(`Data da Tarefa: ${tarefa.data_tarefa}`);
             console.log(`Tempo restante: ${dia_restante}`);
-            console.log(`${horas_restantes} Horas ${minutos_restantes} Minutos ${segundos_restantes} Segundos`)
+            console.log(`${horas_restantes} Horas ${minutos_restantes} Minutos ${segundos_restantes} Segundos`);
             console.log(`Status: ${status}`);
             console.log('---------------------------------------');
             console.log("");     
