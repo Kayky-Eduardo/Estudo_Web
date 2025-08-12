@@ -1,5 +1,5 @@
-const calculo_quadrado = function(numero) {
+const quadrado = function(numero) {
     return numero * numero
 }
-console.log(calculo_quadrado(9));
+console.log(quadrado(9));
 

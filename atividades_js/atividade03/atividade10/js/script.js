@@ -6,8 +6,8 @@ function processarPedido(produto, callback) {
     console.log("Processando o seu pedido.");
     setTimeout(() =>{ 
         console.log("Dados processados"),
-        notificacao(`${produto}`)}, 5000);
+        callback(`${produto}`)}, 5000);
 }
 
-processarPedido("pneu")
+processarPedido("pneu", notificacao);
 

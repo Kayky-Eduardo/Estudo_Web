@@ -1,10 +1,13 @@
 async function buscarUsuario() {
-    try {
-        console.log("Consultando o servidor.")
-        setTimeout(
-
-        )
-    } catch (erro) {
-        console.err
-    };
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve({ nome: "João", idade: 25 });
+        }, 2000);
+    });
 }
+
+async function mostrarUsuario() {
+    const usuario = await buscarUsuario();
+    console.log(usuario);
+}
+mostrarUsuario();

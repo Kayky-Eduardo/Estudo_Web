@@ -1,17 +1,20 @@
 function coletarDados(callback){
-    console.log("Coletando dados")
+    console.log("Coletando dados");
     setTimeout(() =>{ 
-    console.log("Dados coletados"),
-    processarDados("Kayky", 18)},
-    console.log("Os dados irão ser processados")
-    , 5000);
+            console.log("Dados coletados");
+            callback("Kayky", 18.7, exibirDados)},
+            5000
+    );
 }
 
-function processarDados(nome, idade){
-    exibirDados(nome, idade);
+function processarDados(nome, idade, callback) {
+    let dados = nome.toUpperCase();
+    idade = idade.toFixed(0);
+    callback(dados, idade);
 }
-function exibirDados(){
+
+function exibirDados(nome, idade){
     console.log(`nome: ${nome}\nidade: ${idade}`);
 }
 
-coletarDados(processarDados())
+coletarDados(processarDados);
