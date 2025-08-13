@@ -7,16 +7,16 @@ function validacaoData(data) {
     try {
         let validacao_data = data.replace(" ", "T");
         let nova_data = new Date(validacao_data);
-        let agora =  new Date()
+        let agora =  new Date();
 
         if (isNaN(nova_data.getTime()) || nova_data <= agora) {
-            alert("Data inválida.")
+            alert("Data inválida.");
             return false;
         }
         return true
 
     } catch(erro) {
-        console.log(erro)
+        console.log(erro);
     }
 
 }
