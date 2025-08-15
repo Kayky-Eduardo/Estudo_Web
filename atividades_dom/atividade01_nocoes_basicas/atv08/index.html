@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Mostrador de Tipo de Dado</title>
-</head>
-<body>
-    <main>
-        <h1>Mostrador de Tipo de Dado</h1>
-        <input placeholder="Escreva um texto" id="input">
-        <button id="btnVerificar">Verificar</button>
-        <p id="saida"></p>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
+</head>
+<body class="bg-dark text-white">
+    <main>
+        <div class="container">
+            <div class="row justify-content-center align-items-center mb-4 ">
+                <div class="col-12 col-md-8 my-4">
+                    <h1 class="text-center my-4">Mostrador de Tipo de Dado</h1>
+                    <input id="input" placeholder="Digite a algo" class="form-control">
+                    <button id="btnVerificar" class="mt-4 rounded w-100 btn btn-warning">Verificar</button>
+                    <p id="saida" class="mt-4 text-center"></p>
+                </div>
+            </div>
+        </div> 
     </main>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"

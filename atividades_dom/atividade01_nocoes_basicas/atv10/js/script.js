@@ -16,11 +16,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
         for (let i = 0; i < senha.length; i++) {
-                let j = senha[i];
-                if (numeros.includes(j)) temNumero = true;
-                if (letrasMaius.includes(j)) temMaiuscula = true;
-                if (letrasMinus.includes(j)) temMinuscula = true;
-                if (CaracEspeciais.includes(j)) temCaracEspeciais = true;
+                if (numeros.includes(senha[i])) temNumero = true;
+                if (letrasMaius.includes(senha[i])) temMaiuscula = true;
+                if (letrasMinus.includes(senha[i])) temMinuscula = true;
+                if (CaracEspeciais.includes(senha[i])) temCaracEspeciais = true;
             }
             
             if (temNumero && temMaiuscula && temMinuscula && temCaracEspeciais && senha.length >= 8) {
