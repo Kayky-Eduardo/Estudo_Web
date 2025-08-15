@@ -1,8 +1,8 @@
 // Aguarda o carregamento completo do conteúdo HTML antes de executar o código
 document.addEventListener('DOMContentLoaded', function(){
 
-    const resultado = document.getElementById('resultado');
-    const quadrado = document.getElementById('quadrado')
+    const quadrado = document.getElementById('quadrado');
+    quadrado.style.backgroundColor = "black";
 
     document.getElementById('btnVermelho').addEventListener('click', function() {
         quadrado.style.backgroundColor = "red";

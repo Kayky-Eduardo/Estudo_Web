@@ -17,28 +17,47 @@ document.addEventListener('DOMContentLoaded', function(){
        
         const num1 = parseFloat(input1.value);
         const num2 = parseFloat(input2.value);
-        resultado.textContent = somar(num1, num2);
+        if (isNaN(num1) || isNaN(num2)) {
+            resultado.textContent = 'Escreva um valor válido'
+        } else {
+            resultado.textContent = somar(num1, num2);
+        }
+        
 
     })
 
     document.getElementById('btnSubtrair').addEventListener('click', function() {
         const num1 = parseFloat(input1.value);
         const num2 = parseFloat(input2.value);
-        resultado.textContent = subtrair(num1, num2);
-        
+        if (isNaN(num1) || isNaN(num2)) {
+            resultado.textContent = 'Escreva um valor válido.'
+        } else {
+            resultado.textContent = subtrair(num1, num2);
+        }
     })
 
     document.getElementById('btnMultiplicar').addEventListener('click', function() {
         const num1 = parseFloat(input1.value);
         const num2 = parseFloat(input2.value);
-        resultado.textContent = mutiplicar(num1, num2);
-        
+        if (isNaN(num1) || isNaN(num2)) {
+            resultado.textContent = 'Escreva um valor válido.'
+        } else {
+            resultado.textContent = mutiplicar(num1, num2);
+        } 
     })
 
     document.getElementById('btnDividir').addEventListener('click', function() {
         const num1 = parseFloat(input1.value);
         const num2 = parseFloat(input2.value);
-        resultado.textContent = dividir(num1, num2);
+        if (isNaN(num1) || isNaN(num2)) {
+            resultado.textContent = 'Escreva um valor válido.'
+        } else if (num1 == 0 || num2 == 0) {
+            resultado.textContent = 'É impossível dividir por zero. Digite outro número!';
+        } else {
+            resultado.textContent = dividir(num1, num2);
+        } 
+        
+        
         
     })
 })
