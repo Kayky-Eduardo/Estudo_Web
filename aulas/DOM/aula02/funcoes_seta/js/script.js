@@ -28,7 +28,3 @@ document.addEventListener('DOMContentLoaded', () => {
         resultadoElement.innerHTML = `Triplo: ${valor_triplo}`
     })
 })
-
-
-
-
