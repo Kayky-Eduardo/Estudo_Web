@@ -1,0 +1,27 @@
+section {
+    margin-top: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+header {
+    background-color: green;
+    align-items: center;
+    height: 200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.produto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#listaDeProdutos {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
