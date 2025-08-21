@@ -5,6 +5,8 @@ const produtos = [
     { nome: "Mel Puro", preco: 22.00, categoria: "alimentacao" }
 ];
 
+mostrarItens('todos');
+
 function mostrarItens(filtro) {
     const lista = document.getElementById("listaDeProdutos") 
     let soma = 0;
@@ -15,7 +17,7 @@ function mostrarItens(filtro) {
             const item = document.createElement("div")
             item.className = "produto";
             item.innerHTML = `
-            Nome:${produto.nome}<br>
+            <strong>${produto.nome}</strong><br>
             Preço: ${produto.preco}
             `
             lista.appendChild(item)
