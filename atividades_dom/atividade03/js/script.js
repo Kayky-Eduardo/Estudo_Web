@@ -6,9 +6,7 @@ const produtos = [
 ];
 
 const filtro = document.getElementById('filtro')
-
 const resultado = document.getElementById('resultado')
-
 const total = document.getElementById('total')
 
 mostrarItems(filtro);
@@ -20,9 +18,8 @@ function mostrarItems(filtro) {
     produtos.forEach(produto => {
         let item = document.createElement("div")
         item.className = "div-resultado";
-
         if (filtro === "todos" || filtro === produto.categoria){
-            item.innerHTML += `<p>
+            item.innerHTML = `<p>
             Nome: ${produto.nome}<br>
             preço: ${produto.preco}
             </p>
@@ -36,7 +33,6 @@ function somarItens(filtro) {
     filtro = filtro.value;
     const filtragem = produtos.filter(function(produto){
     if (filtro === "todos" || produto.categoria === filtro) {
-        return produto.preco
     }})
 
     const somar = filtragem.reduce(function(acumulador, numeroAtual) {        
