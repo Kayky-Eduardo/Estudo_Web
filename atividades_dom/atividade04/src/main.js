@@ -11,12 +11,7 @@ document.getElementById("btn-equacao").addEventListener('click', () => {
     const ids = ["input-equacaoA", "input-equacaoB", "input-equacaoC"];
     const vEquacao = ids.map(id => parseFloat(document.getElementById(id).value));
     const pEquacao = document.getElementById("resultado-equacao")
-    const resultadoEquacao = calcularEquacao(vEquacao[0], vEquacao[1], vEquacao[2])
-    if (typeof resultadoEquacao === "string") {
-        pEquacao.textContent = resultadoEquacao;
-    } else {
-        pEquacao.innerHTML = `Resultado da equação:<br>x': ${resultadoEquacao.x1}<br>x'': ${resultadoEquacao.x2}`;
-    }
+    calcularEquacao(vEquacao[0], vEquacao[1], vEquacao[2], pEquacao)
 })
 
 document.getElementById("btn-par-impar").addEventListener('click', () => {
