@@ -23,80 +23,64 @@
 
     <!--Container para o conteúdo-->
     <main class="container">
-        <section class="d-flex gap-4 mt-4 ">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">WebData Solutions</h5>
-                    <input id="input-par-impar" class="form-control mb-3" type="number" placeholder="Insira um número">
-                    <button id="btn-par-impar" class="w-100 btn btn-primary">Verificar se é par ou impar</button>
-                    <p class="mt-4" id="resultado-par-impar"></p>
-                </div>
+        <div class="row mt-4 align-items-start mb-5 g-3">
+            <div class="col-md-6 col-xl-6 col-12 col-sm-6 caixa">
+                <h4 class="fw-bold mb-4 mt-3">WebData Solutions</h4>
+                <input id="input-par-impar" class="form-control mb-3" type="number" placeholder="Insira um número">
+                <button id="btn-par-impar" class="w-100 btn btn-primary">Verificar se é par ou impar</button>
+                <p class="mt-4" id="resultado-par-impar"></p>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">CodeMetrics</h5>
-                    <input id="input-maior-menor1" class="form-control mb-3" type="number" placeholder="primeiro número">
-                    <input id="input-maior-menor2" class="form-control mb-3" type="number" placeholder="segundo número">
-                    <input id="input-maior-menor3" class="form-control mb-3" type="number" placeholder="terceiro número">
-                    <button id="btn-maior-menor" class="w-100 btn btn-primary">Encontrar maior e menor número!</button>
-                    <p class="mt-4" id="resultadoMaiorMenor"></p>
-                </div>
+            <div class="col-md-6 col-xl-6 col-12 col-sm-6 caixa">
+                <h4 class="fw-bold mb-4 mt-3">SpeedControl</h4>
+                <input id="input-velocidade" class="form-control mb-3" type="number" placeholder="Insira a velocidade">
+                <button id="btn-velocidade" class="w-100 btn btn-primary">Monitoramento de Velocidade</button>
+                <p class="mt-4" id="resultado-velocidade"></p>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">SpeedControl</h5>
-                    <input id="input-velocidade" class="form-control mb-3" type="number" placeholder="Insira a velocidade">
-                    <button id="btn-velocidade" class="w-100 btn btn-primary">Monitoramento de Velocidade</button>
-                    <p class="mt-4" id="resultado-velocidade"></p>
-                </div>
+            <div class="col-md-4 col-xl-6 col-12 col-sm-6 caixa">
+                <h4 class="fw-bold mb-4 mt-3">DevSalary</h4>
+                <input id="input-salario" class="form-control mb-3" type="number" placeholder="Insira o salario">
+                <button id="btn-salario" class="w-100 btn btn-primary">Aumento Salarial!</button>
+                <p class="mt-4" id="resultado-salario"></p>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">DevSalary</h5>
-                    <input id="input-salario" class="form-control mb-3" type="number" placeholder="Insira o salario">
-                    <button id="btn-salario" class="w-100 btn btn-primary">Aumento Salarial!</button>
-                    <p class="mt-4" id="resultado-salario"></p>
-                </div>
+            <div class="col-md-4 col-xl-6 col-12 col-sm-6 caixa">
+                <h4 class="fw-bold mb-4 mt-3">ViaWeb</h4>
+                <input id="input-passagem" class="form-control mb-3" type="number" placeholder="Insira a distância da viagem em km">
+                <button id="btn-passagem" class="w-100 btn btn-primary">Verificar preço de Passagem</button>
+                <p class="mt-4" id="resultado-passagem"></p>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">ViaWeb</h5>
-                    <input id="input-passagem" class="form-control mb-3" type="number" placeholder="Insira a distância da viagem em km">
-                    <button id="btn-passagem" class="w-100 btn btn-primary">Verificar preço de Passagem</button>
-                    <p class="mt-4" id="resultado-passagem"></p>
-                </div>
+            <div class="col-md-4 col-xl-12 col-12 col-sm-6 caixa">
+                <h4 class="fw-bold mb-4 mt-3">WebYear</h4>
+                <input id="input-ano" class="form-control mb-3" type="number" placeholder="Insira o ano">
+                <button id="btn-ano" class="w-100 btn btn-primary">Verificar se é Ano Bissexto</button>
+                <p class="mt-4 " id="resultado-bissexto"></p>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">WebYear</h5>
-                    <input id="input-ano" class="form-control mb-3" type="number" placeholder="Insira o ano">
-                    <button id="btn-ano" class="w-100 btn btn-primary">Verificar se é Ano Bissexto</button>
-                    <p class="mt-4" id="resultado-bissexto"></p>
-                </div>
+        </div>
+        <div class="row mt-4 align-items-start mt-5 mb-5 g-4    ">
+            <div class="col-md-4 col-xl-4 caixa">
+                <h4 class="fw-bold mb-4 mt-3">TriangularWeb</h4>
+                <input id="input-trianguloA" class="form-control mb-3" type="number" placeholder="Valor para A">
+                <input id="input-trianguloB" class="form-control mb-3" type="number" placeholder="Valor para B">
+                <input id="input-trianguloC" class="form-control mb-3" type="number" placeholder="Valor para C">
+                <button id="btn-triangulo" class="w-100 btn btn-primary">Verificar se é possível formar um triangulo</button>
+                <p class="mt-4" id="resultado-triangulo"></p>
             </div>
-        </section>
-        <section class="d-flex justify-content-center align-items-center gap-3 mt-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">TriangularWeb</h5>
-                    <input id="input-trianguloA" class="form-control mb-3" type="number" placeholder="Valor para A">
-                    <input id="input-trianguloB" class="form-control mb-3" type="number" placeholder="Valor para B">
-                    <input id="input-trianguloC" class="form-control mb-3" type="number" placeholder="Valor para C">
-                    <button id="btn-triangulo" class="w-100 btn btn-primary">Verificar se é possível formar um triangulo</button>
-                    <p class="mt-4" id="resultado-triangulo"></p>
-                </div>
+            <div class="col-md-4 col-xl-4 caixa">
+                <h4 class="fw-bold mb-4 mt-3">MathSolver</h4>
+                <input id="input-equacaoA" class="form-control mb-3" type="number" placeholder="Valor para A">
+                <input id="input-equacaoB" class="form-control mb-3" type="number" placeholder="Valor para B">
+                <input id="input-equacaoC" class="form-control mb-3" type="number" placeholder="Valor para C">
+                <button id="btn-equacao" class="w-100 btn btn-primary">Realizar Equação do 2° grau</button>
+                <p class="mt-4" id="resultado-equacao"></p>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">MathSolver</h5>
-                    <input id="input-equacaoA" class="form-control mb-3" type="number" placeholder="Valor para A">
-                    <input id="input-equacaoB" class="form-control mb-3" type="number" placeholder="Valor para B">
-                    <input id="input-equacaoC" class="form-control mb-3" type="number" placeholder="Valor para C">
-                    <button id="btn-equacao" class="w-100 btn btn-primary">Realizar Equação do 2° grau</button>
-                    <p class="mt-4" id="resultado-equacao"></p>
-                </div>
+            <div class="col-md-4 col-xl-4 caixa">
+                <h4 class="fw-bold mb-4 mt-3">CodeMetrics</h4>
+                <input id="input-maior-menor1" class="form-control mb-3" type="number" placeholder="primeiro número">
+                <input id="input-maior-menor2" class="form-control mb-3" type="number" placeholder="segundo número">
+                <input id="input-maior-menor3" class="form-control mb-3" type="number" placeholder="terceiro número">
+                <button id="btn-maior-menor" class="w-100 btn btn-primary">Encontrar maior e menor número!</button>
+                <p class="mt-4" id="resultadoMaiorMenor"></p>
             </div>
-        </section>
+        </div>
     </main>
 
     <!--Rodapé da página-->

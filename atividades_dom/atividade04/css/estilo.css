@@ -5,3 +5,11 @@
 header {
     height: 200px;
 }
+
+body {
+    background-color: black;
+}
+
+.caixa {
+    background-color: aliceblue;
+}
