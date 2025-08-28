@@ -6,17 +6,18 @@ document.getElementById("btn-adicionar").addEventListener('click', () => {
     const resultado = document.getElementById("resultado")
 
         let lista_notas = notas.split(",").map(nota => nota.trim());
+
         if (nome === "" || frequencia === "" || notas === "") {
             erro.textContent = "Preencha todos os campos."
             return
         } else if (lista_notas.some(nota => isNaN(nota)) || isNaN(parseFloat(frequencia))) {
             erro.textContent = "Digite valores numéricos válidos."
             return
-        } else if (parseFloat(frequencia) > 100) {
+        } else if (parseFloat(frequencia) > 100 || parseFloat(frequencia) < 0) {
             erro.textContent = "Digite uma frequência válida"
             return
         } else {
-            erro.textContent = ""    
+            erro.textContent = ""
             let valores = lista_notas.map(valor => parseFloat(valor))
 
             let soma_notas =  valores.reduce((acumulador, numeroAtual) => acumulador + numeroAtual, 0)
@@ -35,7 +36,7 @@ document.getElementById("btn-adicionar").addEventListener('click', () => {
                 mencao = "D"
             }
             item.innerHTML = `
-            <th scope="row">${nome}</th>
+            <th scope="row" class="text-center">${nome}</th>
             <td>${frequencia}</td>
             <td>${media.toFixed(2)}</td>
             <td>${mencao}</td>
