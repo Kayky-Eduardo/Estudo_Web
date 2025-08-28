@@ -19,22 +19,25 @@ document.getElementById("btn-adicionar").addEventListener('click', () => {
         } else {
             erro.textContent = ""
             let valores = lista_notas.map(valor => parseFloat(valor))
-
+            let valor_frequencia = parseFloat(frequencia)
             let soma_notas =  valores.reduce((acumulador, numeroAtual) => acumulador + numeroAtual, 0)
             let item = document.createElement("tr")
 
             let media = valores.length > 0 ? soma_notas / valores.length : 0
 
             let mencao = "";
-            if (media > 8.5) {
+            if (media > 8.5 && valor_frequencia >= 80) {
                 mencao = "A"
-            } else if (media > 6.5) {
+            } else if (media > 6.5 && valor_frequencia > 60) {
                 mencao ="B"
-            } else if (media >= 4) {
+            } else if (media >= 4.5 && valor_frequencia >= 50) {
                 mencao = "C"
-            } else {
+            } else if (media >= 3.5 && valor_frequencia >= 20){
                 mencao = "D"
+            } else {
+                mencao = "F"
             }
+
             item.innerHTML = `
             <th scope="row" class="text-center">${nome}</th>
             <td>${frequencia}</td>
